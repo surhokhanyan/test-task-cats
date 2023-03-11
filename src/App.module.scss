@@ -1,0 +1,12 @@
+@import "./mixins/Mixins";
+
+.App{
+  width: 100%;
+  min-height: 100vh;
+  @include flDownStart();
+  gap: 30px;
+  background: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

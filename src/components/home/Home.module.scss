@@ -1,0 +1,17 @@
+@import "../../mixins/Mixins";
+
+.home{
+    width: 100%;
+    min-height: calc(100vh - 110px);
+    @include flexCenter();
+    span{
+        font-family: "Century Gothic";
+        font-size: 80px;
+        color: red;
+        font-weight: 400;
+        text-transform: uppercase;
+        @media screen and (max-width: 600px) {
+            font-size: 60px;
+        }
+    }
+}

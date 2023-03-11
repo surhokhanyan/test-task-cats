@@ -1,0 +1,28 @@
+@import "../../mixins/Mixins";
+
+.btn{
+    width: 150px;
+    height: 50px;
+    @include flexCenter();
+    margin-bottom: 30px;
+    button{
+        width: 100%;
+        height: 100%;
+        @include flexCenter();
+        border-radius: 10px;
+        border: 1px solid red;
+        background: transparent;
+        color: red;
+        font-family: "Century Gothic";
+        font-weight: 400;
+        font-size: 15px;
+        cursor: pointer;
+        text-transform: capitalize;
+        transition: all .3s ease-in;
+        &:hover{
+            border-color: white;
+            color: white;
+            background: red;
+        }
+    }
+}
